@@ -16,7 +16,7 @@ from typing import Optional
 from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.gemini_service import analyze_inspection, ask_copilot
+from gemini_service import analyze_inspection, ask_copilot
 
 # --- basic logging setup so you have "production evidence" from day one ---
 os.makedirs("product evidence", exist_ok=True)
